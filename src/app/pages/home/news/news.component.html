@@ -1,0 +1,51 @@
+
+<div class="feed-messages-container">
+  <div class="news-message" *ngFor="let message of news" (click)="expandMessage(message)">
+
+    <div class="message-icon" *ngIf="message.type == 'text-message'">
+      <img class="photo-icon" src="{{ ( message.author | profilePicture ) }}">
+    </div>
+    <div class="message-icon" *ngIf="message.type != 'text-message'">
+      <img class="photo-icon" src="{{ ( message.author | profilePicture ) }}">
+      <!--<span class="online-punkt-icon" [ngClass]="message.type"></span>-->
+    </div>
+    <div class="text-block text-message">
+      <div class="message-header">
+        <span class="author text-capitalize mt-2">{{ message.author }} {{ message.surname}}</span>
+      </div>
+
+      <div class="message-time ">
+        <div class="post-time ml-1">
+          {{ message.time }}
+        </div>
+        <div class="ago-time">
+          {{ message.ago }}
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="message-content line-clamp" [ngClass]="{'line-clamp-2' : !message.expanded}">
+        <span *ngIf="message.preview">{{ message.header }} </span>{{ message.text }}
+      </div>
+      <div class="preview" *ngIf="message.preview">
+        <a href="{{ message.link }}" target="_blank">
+          <img src="{{ ( message.preview | appPicture )}}">
+        </a>
+      </div>
+      <hr>
+      <div class="message-time ">
+      <button class="btn-mod btn-xs"> <i class="fa fa-heart">&nbsp;&nbsp; Мне нравится</i></button>
+        <button class="btn-mod btn-xs" data-toggle="tooltip" data-animation="false"
+                data-placement="bottom" title="Поделиться">  <i class="fa fa-arrow-up"></i></button>
+        <!--<div class="post-time">-->
+          <!--{{ message.time }}-->
+        <!--</div>-->
+        <!--<div class="ago-time">-->
+          <!--{{ message.ago }}-->
+        <!--</div>-->
+      </div>
+    </div>
+
+  </div>
+</div>
+
