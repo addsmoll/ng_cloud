@@ -5,15 +5,15 @@
 .top-navbar{
     background-color: $top-navbar-bg-color;
     color: $top-navbar-text-color;
-    .app-search{  
+    .app-search{
         border-bottom: 1px solid $top-navbar-text-color;
         .form-control{
             color: $top-navbar-text-color;
-        }  
+        }
         @include placeholder-color($top-navbar-text-color, 0.8);
         i{
             color: $top-navbar-text-color;
-        }        
+        }
     }
     a{
         color: $top-navbar-text-color;
@@ -23,10 +23,10 @@
 .logo{
     color: $logo-color !important;
     .ng{
-        color: $logo-ng-color; 
+        color: $logo-ng-color;
     }
 }
-.menu-icon .line{ 
+.menu-icon .line{
     background-color: $top-navbar-text-color;
 }
 #info-content-icon{
@@ -42,7 +42,7 @@
     }
 }
 
-.menu-wrapper .card a{ 
+.menu-wrapper .card a{
     color: $sidebar-item-color;
     border-bottom: 1px solid rgba($sidebar-item-bottom-border-color, 0.5);
     box-shadow: 0 1px 0 0 rgba($sidebar-item-bottom-border-shadow-color, 0.1);
@@ -55,7 +55,7 @@
         color: #fff;
     }
 }
-.menu-wrapper .card{ 
+.menu-wrapper .card{
     @include menu-level-bg-color($sidebar-subitem-bg-color);
 }
 
@@ -74,20 +74,20 @@
         .form-control{
             background-color: $info-content-bg-color;
             border-color: rgba($top-navbar-text-color, 0.4);
-            color: $top-navbar-text-color;           
+            color: $top-navbar-text-color;
         }
         @include placeholder-color($top-navbar-text-color, 0.7);
-    } 
+    }
     .left-border{
         border-left: 1px solid rgba($top-navbar-text-color, 0.3);
-    }  
+    }
 }
 
 #messagesDropDown .dropdown-menu .nav-link.active{
     border-bottom: 4px solid $messages-ddl-link-active-border-color;
 }
 
-.dropdown-menu .user-menu .user-info{ 
+.dropdown-menu .user-menu .user-info{
     background-color: $user-menu-bg-color;
     color: $user-menu-text-color;
 }
@@ -102,8 +102,8 @@
 }
 
 /*Side-Chat*/
-.side-chat{ 
-    .media{ 
+.side-chat{
+    .media{
         color: $side-chat-item-color;
         background-color: $side-chat-item-bg-color;
         border-bottom: 1px solid $side-chat-item-bottom-border-color;
@@ -114,7 +114,7 @@
         background-color: $side-chat-item-bg-color;
         .header{
             border-bottom: 1px solid $side-chat-item-color;
-        }        
+        }
     }
 }
 
@@ -140,7 +140,7 @@
             .tooltip-inner::before {
                 border-bottom-color: $mini-sidebar-tooltip-arrow-color;
             }
-        } 
+        }
     }
     .tooltip-inner {
         color: $mini-sidebar-tooltip-color;
@@ -153,14 +153,14 @@
 
 /*Horizontal-menu*/
 .horizontal-menu-outer{
-    background-color: $sidebar-bg-color;   
+    background-color: $sidebar-bg-color;
 }
 #navigation{
     .menu{
         li{
             border-right: 1px solid rgba($sidebar-item-bottom-border-shadow-color, 0.1);
             a{
-                color: $sidebar-item-color; 
+                color: $sidebar-item-color;
                 &:hover{
                     color: $sidebar-item-hover-color;
                     background-color: $sidebar-item-hover-bg-color !important;
@@ -175,7 +175,7 @@
             }
         }
         .sub-menu{
-            background-color: $sidebar-bg-color; 
+            background-color: $sidebar-bg-color;
         }
     }
 }
@@ -193,7 +193,7 @@
             .tooltip-inner::before {
                 border-top-color: $mini-horizontal-menu-tooltip-arrow-color;
             }
-        } 
+        }
     }
     .tooltip-inner {
         color: $mini-horizontal-menu-tooltip-color;
@@ -235,7 +235,7 @@
 /*Libs */
 .widget-controls{
     a{
-        color: $widget-controls-color;         
+        color: $widget-controls-color;
         &:hover{
             color: rgba($widget-controls-color, 0.7);
         }
@@ -246,8 +246,8 @@
 @media (max-width: 575px) {  }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767px) { 
-   
+@media (min-width: 576px) and (max-width: 767px) {
+
 }
 
 // Medium devices (tablets, 768px and up)

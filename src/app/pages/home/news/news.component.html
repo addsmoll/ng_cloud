@@ -1,6 +1,6 @@
 
-<div class="feed-messages-container">
-  <div class="news-message" *ngFor="let message of news" (click)="expandMessage(message)">
+<div class="feed-messages-container bg-transparent">
+  <div class="news-message box-shadow" *ngFor="let message of news" (click)="expandMessage(message)">
 
     <div class="message-icon" *ngIf="message.type == 'text-message'">
       <img class="photo-icon" src="{{ ( message.author | profilePicture ) }}">

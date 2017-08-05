@@ -1,0 +1,248 @@
+.icon-sp{
+  display: inline-block;
+}
+.create-sp{
+  display: block;
+  width: 100%;
+  border: none;
+.collapse{
+  margin-top: 8px;
+}
+}
+//--------------//
+.ol {
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  //text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.ol ol {
+  margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+//--------------//
+
+.rectangle-list a{
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em .8em;
+ // *padding: .4em;
+  margin: .5em 0 .5em 2.5em;
+  background: #ffffff; //#ddd;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+.rectangle-list a:hover{
+  background: #ffffff;
+}
+
+.rectangle-list a:before{
+  //content: normal;  //counter(li);
+  //counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #fa8072;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  //font-weight: bold;
+}
+
+.rectangle-list a:after{
+  position: absolute;
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: all .3s ease-out;
+}
+
+.rectangle-list a:hover:after{
+  left: -.5em;
+  border-left-color: #fa8072;
+}
+
+
+/*---------Rounded-List-----------*/
+/*
+
+.rounded-list a{
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+
+  margin: .5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: all .3s ease-out;
+}
+
+.rounded-list a:hover{
+  background: #eee;
+}
+
+.rounded-list a:hover:before{
+  transform: rotate(360deg);
+}
+
+.rounded-list a:before{
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #87ceeb;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+
+.spinner {
+  text-indent: 999em;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -10px;
+  background-color: #888;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 50%;
+}
+.spinner:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 2.66667px;
+  background-color: #fff;
+  height: 4px;
+  width: 4px;
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  transform-origin: 7.33333px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+*/
+
+//-------btnh-------//
+/*
+.btnh {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  height: auto;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0 solid transparent;
+  border-radius: 3px;
+  background-color: #8493b5;
+}
+
+
+
+.btnh:hover,
+.btnh:focus,
+.btnh.focus {
+  color: #fff;
+  background-color: #728cb5;
+  height: inherit;
+}
+
+
+!*.btnh.disabled,*!
+!*.btnh[disabled],*!
+!*fieldset[disabled] .btnh {*!
+!*cursor: not-allowed;*!
+!*filter: alpha(opacity=65);*!
+!*-webkit-box-shadow: none;*!
+!*box-shadow: none;*!
+!*opacity: .65;}*!
+
+
+
+.btnh-h_icons {
+
+  margin-left: 15%;
+  width: 90px;
+  color: #333;
+  text-decoration: none;
+  height: inherit;
+}
+
+
+.btnh-profil {
+
+  right: 0;
+  width: 150px;
+  padding-right: 5%;
+  color: #333;
+  text-decoration: none;
+  height: inherit;
+}*/
+//-------------//
+
+#inputs input {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 5px 0;
+  width: 238px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+}
+
+#inputs input:focus {
+  background-color: #fff;
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+/*--------------------*/
+
+.centered-block {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+
+/*очистка потока, содержащего плавающий элемент*/
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

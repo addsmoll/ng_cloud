@@ -1,5 +1,6 @@
 @import "../theme/styles/variables";
 
+
 .wrapper-inner{
     min-height: 100%;
     height: auto !important;
@@ -11,7 +12,7 @@
 .main-content{
     width: 100%;
     padding: 25px;
-    -webkit-box-flex: 1;     
+    -webkit-box-flex: 1;
     min-height: calc(100vh - (#{$top-navbar-height} + #{$footer-height}));
     overflow: hidden;
 }
@@ -34,7 +35,7 @@
         left: -34px;
         padding: 7px 12px 7px 10px;
         z-index: 99;
-        background: #fff;      
+        background: #fff;
         border-color: rgba(0, 0, 0, 0.125);
         border-style: solid;
         border-width: 1px 0px 1px 1px;
@@ -59,7 +60,7 @@
             border-top: 1px solid rgba(0, 0, 0, 0.125);
             border-bottom: 0;
         }
-    }   
+    }
     .card-block{
         padding: 2px 20px;
         h6{
@@ -73,7 +74,7 @@
         border-radius: 50%;
         display: inline-block;
         margin-right: 5px;
-        cursor: pointer;        
+        cursor: pointer;
         &.light{
             background-color: #ececec;
         }
@@ -115,5 +116,5 @@
     }
     .custom-control .custom-control-description{
         margin-top: -1px;
-    } 
+    }
 }

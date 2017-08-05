@@ -68,7 +68,7 @@ export class MembershipData implements InMemoryDbService {
                 registrationDate: "2011-01-05T08:45:23.511Z",
                 joinedDate: "2017-05-20T18:25:43.511Z"
             },
-            menuIds: [] 
+            menuIds: []
         },
         {
             id: 3,
@@ -102,7 +102,7 @@ export class MembershipData implements InMemoryDbService {
                 registrationDate: "2014-11-01T19:35:43.511Z",
                 joinedDate: "2017-06-28T15:25:43.511Z"
             },
-            menuIds: [] 
+            menuIds: []
         },
         {
             id: 4,
@@ -136,7 +136,7 @@ export class MembershipData implements InMemoryDbService {
                 registrationDate: "2015-12-06T11:10:20.511Z",
                 joinedDate: "2017-06-29T15:15:40.511Z"
             },
-            menuIds: [] 
+            menuIds: []
         },
         {
             id: 5,
@@ -170,7 +170,7 @@ export class MembershipData implements InMemoryDbService {
                 registrationDate: "2014-01-10T10:20:20.511Z",
                 joinedDate: "2017-06-28T12:20:40.511Z"
             },
-            menuIds: [] 
+            menuIds: []
         },
         {
             id: 6,
@@ -204,7 +204,7 @@ export class MembershipData implements InMemoryDbService {
                 registrationDate: "2016-11-16T12:20:20.511Z",
                 joinedDate: "2017-06-27T14:20:40.511Z"
             },
-            menuIds: [] 
+            menuIds: []
         },
         {
             id: 7,
@@ -238,7 +238,7 @@ export class MembershipData implements InMemoryDbService {
                 registrationDate: "2010-10-12T16:20:20.511Z",
                 joinedDate: "2017-06-29T15:20:40.511Z"
             },
-            menuIds: [] 
+            menuIds: []
         },
         {
             id: 8,
@@ -272,43 +272,77 @@ export class MembershipData implements InMemoryDbService {
                 registrationDate: "2009-08-12T16:20:20.511Z",
                 joinedDate: "2017-06-30T11:30:40.511Z"
             },
-            menuIds: [] 
+            menuIds: []
         },
         {
-            id: 9,
-            username: "michelle.81",
-            password: "michelle123",
-            profile: {
-                name: "Michelle",
-                surname: "Ormond",
-                birthday: { day: 18, month: 11, year: 1981 },
-                gender: "female",
-                image: "assets/img/avatars/avatar-5.png"
-            },
-            work: {
-                company: "Starbucks",
-                position: "Sale manager",
-                salary: 15000
-            },
-            contacts:{
-                email: "michelle@starbucks.com",
-                phone: "(267) 388-1637",
-                address: "Washington, Seattle"
-            },
-            social: {
-                facebook:"",
-                twitter:"",
-                google:""
-            },
-            settings:{
-                isActive: false,
-                isDeleted: true,
-                registrationDate: "2012-11-10T18:20:20.511Z",
-                joinedDate: "2015-03-29T17:20:40.511Z"
-            },
-            menuIds: [] 
-        }
-       
+        id: 9,
+        username: "michelle.81",
+        password: "michelle123",
+        profile: {
+          name: "Michelle",
+          surname: "Ormond",
+          birthday: { day: 18, month: 11, year: 1981 },
+          gender: "female",
+          image: "assets/img/avatars/avatar-5.png"
+        },
+        work: {
+          company: "Starbucks",
+          position: "Sale manager",
+          salary: 15000
+        },
+        contacts:{
+          email: "michelle@starbucks.com",
+          phone: "(267) 388-1637",
+          address: "Washington, Seattle"
+        },
+        social: {
+          facebook:"",
+          twitter:"",
+          google:""
+        },
+        settings:{
+          isActive: false,
+          isDeleted: true,
+          registrationDate: "2012-11-10T18:20:20.511Z",
+          joinedDate: "2015-03-29T17:20:40.511Z"
+        },
+        menuIds: []
+      }
+       ,
+      {
+        id: 10,
+        username: "mie.81",
+        password: "michelle123",
+        profile: {
+          name: "Sergio",
+          surname: "Goman",
+          birthday: { day: 18, month: 11, year: 1981 },
+          gender: "female",
+          image: ""
+        },
+        work: {
+          company: "Starbucks",
+          position: "Sale manager",
+          salary: 15000
+        },
+        contacts:{
+          email: "michelle@starbucks.com",
+          phone: "(267) 388-1637",
+          address: "Washington, Seattle"
+        },
+        social: {
+          facebook:"",
+          twitter:"",
+          google:""
+        },
+        settings:{
+          isActive: false,
+          isDeleted: true,
+          registrationDate: "2012-11-10T18:20:20.511Z",
+          joinedDate: "2015-03-29T17:20:40.511Z"
+        },
+        menuIds: []
+      }
     ];
     return {users};
   }

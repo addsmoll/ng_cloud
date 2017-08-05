@@ -1,7 +1,7 @@
 export class User {
   id: number;
   username: string;
-  password: string;  
+  password: string;
   profile: UserProfile;
   work: UserWork;
   contacts: UserContacts;
@@ -10,12 +10,13 @@ export class User {
   menuIds: number[];//  =>   for create ngModel multiselect
 }
 
-export class UserProfile {  
+export class UserProfile {
   name: string;
-  surname: string;  
+  surname: string;
   birthday: Object;
   gender: string;
   image: string;
+
 }
 
 export class UserWork {
@@ -27,7 +28,7 @@ export class UserWork {
 export class UserContacts{
   email: string;
   phone: string;
-  address: string;  
+  address: string;
 }
 
 export class UserSocial {
@@ -84,7 +85,7 @@ export class UserSettings{
 //       isDeleted: false,
 //       registrationDate: new Date(year-1, month, day-2, hour, minute),
 //       joinedDate: new Date(year, month, day-1, hour, minute)
-//     } 
+//     }
 //   },
 //   {
 //     id: 2,
@@ -117,7 +118,7 @@ export class UserSettings{
 //       isDeleted: false,
 //       registrationDate:  new Date(year-3, month-2, day-8, hour, minute),
 //       joinedDate:  new Date(year, month, day, hour-2, minute)
-//     } 
+//     }
 //   },
 //   {
 //     id: 3,
@@ -150,9 +151,9 @@ export class UserSettings{
 //       isDeleted: true,
 //       registrationDate:  new Date(year-4, month-2, day-3, hour, minute),
 //       joinedDate:  new Date(year, month, day, hour-6, minute)
-//     } 
+//     }
 //   }
 
- 
+
 // ]
 

@@ -7,19 +7,19 @@
             <div class="row align-items-center">
                 <div class="col-md-5">
                     <div class="d-flex justify-content-center align-items-center pt-md-0 pt-3 info">
-                        <img src="assets/img/users/user.jpg" class="rounded-circle user-img"> 
+                        <img src="../../../../assets/img/users/user.jpg" class="rounded-circle user-img">
                         <div class="d-flex flex-column pl-3">
                             <h5 class="mb-0">Emilio Verdines <i class="fa fa-check-circle fs-13 text-success ml-2"></i></h5>
                             <span>Project menecer</span>
                             <div class="pt-3">
-                                <button class="btn btn-success">Profile</button> 
-                                <button class="btn btn-gray">Edit</button> 
-                            </div>                            
+                                <button class="btn btn-success">Profile</button>
+                                <button class="btn btn-gray">Edit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="row py-4">                        
+                    <div class="row py-4">
                         <div class="col-lg-7 col-sm-8 col-12 left-border">
                             <div class="info w-280p mx-auto text-center">
                                 <form>
@@ -34,7 +34,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-sm btn-gray"><i class="fa fa-paper-plane mr-2"></i>Send</button>
                                 </form>
-                            </div>                           
+                            </div>
                         </div>
                         <div class="col-lg-5 col-sm-4 left-border hidden-xs-down">
                             <div class="info w-100p mx-auto">
@@ -81,10 +81,11 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-start align-items-center top-navbar">                  
-            
+        <div class="d-flex justify-content-start align-items-center top-navbar">
+
             <a class="logo" routerLink="/" (click)="closeSubMenus()">
-                <span class="start">start</span><span class="ng">NG</span>
+              <img src="../../../../assets/img/logo/logo_ball.png" width="100%">
+                <!--<span class="start">start</span><span class="ng">NG</span>-->
             </a>
 
             <span class="navbar-text menu-icon transition ml-3 mr-3" [ngClass]="{'open': settings.theme.showMenu}"
@@ -112,28 +113,28 @@
             <div class="top-rigth-icons ml-auto">
                 <span class="hidden-xs-down">
                     <app-flags-menu></app-flags-menu>
-                </span> 
+                </span>
                 <span class="hidden-xs-down">
                     <app-fullscreen></app-fullscreen>
-                </span> 
+                </span>
                 <span class="hidden-xs-down">
-                    <app-applications></app-applications>                    
-                </span> 
+                    <app-applications></app-applications>
+                </span>
                 <span class="hidden-xs-down">
                     <app-messages></app-messages>
-                </span>               
+                </span>
                 <span class="hidden-xs-down pl-2 pr-2" (click)="settings.theme.showSideChat = !settings.theme.showSideChat">
                     <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                </span> 
+                </span>
                 <span class="hidden-xs-down">
                     <app-user-menu></app-user-menu>
-                </span> 
+                </span>
                 <span class="pl-2 pr-2">
                     <a routerLink="/login">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
-                    </a>                   
-                </span> 
-            </div> 
+                    </a>
+                </span>
+            </div>
 
             <!--<div class="d-flex ml-auto">
                 <form class="app-search hidden-xs-down ml-2 mr-2">
@@ -142,19 +143,19 @@
                 </form>
                 <span class="ml-2 mr-2">
                     <i class="fa fa-sign-out" aria-hidden="true"></i>
-                </span>                
+                </span>
             </div>-->
 
-           
-                
-          
-                
+
+
+
+
             <!--<span class="navbar-text ml-2 mr-2">
                 <a id="info-content-icon" data-toggle="collapse" href="#info-content" (click)="showInfoContent = !showInfoContent" [class.show]="showInfoContent">
                     <i [@showInfo]="showInfoContent" class="fa fa-arrow-circle-o-down"></i>
                 </a>
             </span>           -->
-           
+
 
             <!--<div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
@@ -163,7 +164,7 @@
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/login']">Link</a>
-                    </li>       
+                    </li>
                     <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
@@ -178,8 +179,8 @@
         </div>
 
         <div class="horizontal-menu-outer" *ngIf="settings.theme.menu == 'horizontal'">
-                   
-            <app-horizontal-menu *ngIf="showHorizontalMenu"  [menuItems]="menuItems"></app-horizontal-menu>        
+
+            <app-horizontal-menu *ngIf="showHorizontalMenu"  [menuItems]="menuItems"></app-horizontal-menu>
             <app-vertical-menu *ngIf="!showHorizontalMenu"  [menuItems]="menuItems"></app-vertical-menu>
 
         </div>

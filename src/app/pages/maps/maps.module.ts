@@ -17,9 +17,12 @@ export const routes = [
     AgmCoreModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ 
-    GoogleMapsComponent, 
-    LeafletMapsComponent 
+  declarations: [
+    GoogleMapsComponent,
+    LeafletMapsComponent
+  ],
+  exports: [
+    LeafletMapsComponent
   ]
 })
 export class MapsModule { }

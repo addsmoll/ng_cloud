@@ -1,0 +1,188 @@
+
+<section widget class="card">
+
+  <nav class=" card-header">
+
+
+      <div class="input-group input-group-sm">
+                <span class="input-group-addon bg-transparent border-0">
+                    <i class="fa fa-search ml-2 mr-1"></i>
+                </span>
+        <input class="form-control border-0" type="text" [(ngModel)]="searchText" placeholder="Users...">
+        <div class="input-group-btn">
+          <button type="button" class="btn dropdown-toggle no-caret bg-transparent border-0 box-shadow-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right box-shadow rounded-0">
+            <a class="dropdown-item" href="javascript:void(0);" (click)="type = 'all';getMails();">All</a>
+            <a class="dropdown-item" href="javascript:void(0);" (click)="type = 'starred';getMails();">Starred</a>
+            <a class="dropdown-item" href="javascript:void(0);" (click)="type = 'sent';getMails();">Sent</a>
+            <a class="dropdown-item" href="javascript:void(0);" (click)="type = 'drafts';getMails();">Drafts</a>
+            <a class="dropdown-item" href="javascript:void(0);" (click)="type = 'trash';getMails();">Trash</a>
+          </div>
+        </div>
+      </div>
+
+
+
+  </nav>
+
+  <div class="card-block-mod widget-body p-0 bottom-30">
+    <section class="row pl-3 pr-3">
+     <ol class="nav flex-column left col-3 rectangle-list mt-1">
+    <li class="nav-item">
+      <a class="nav-link active fa fa-soccer-ball-o" href="#games-search" data-toggle="tab"></a>
+
+    </li>
+    <li class="nav-item">
+      <a class="nav-link fa fa-user" href="#user-search" data-toggle="tab"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link fa fa-users" href="#command-search" data-toggle="tab"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled fa fa-trophy" href="javascript:void(0); "></a>
+    </li>
+  </ol>
+     <aside class="p-0 tab-content col-9 border-0">
+
+      <div class="tab-pane active m-0 p-0" id="games-search">
+
+        <div class="form-group input-group-sm w-75 ml-5">
+          <i class="icon-sp fa fa-calendar"></i>
+          <label for="input-12"></label>
+           <input type="date" class="form-control" value="" id="input-12">
+          <!--<button class="btn btn-sm btn-outline-primary" (click)="selectToday()">Select Today</button>-->
+        </div>
+
+        <article class="create-sp" role="tab" id="headingTwo">
+
+
+            <a class="collapsed text-muted" data-toggle="collapse" data-parent="#accordion-1" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Создать игру
+            </a>
+          <section id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="row">
+              <div class="col-md-8 offset-4 mb-3">
+                <h6></h6>
+                <div class="form-group">
+                  <div class="custom-controls-stacked">
+
+                    <label class="custom-control custom-radio">
+                      <input type="radio" name="stacked-radio" class="custom-control-input radio-success">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">2x2</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" name="stacked-radio" class="custom-control-input radio-success">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">3x3</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" name="stacked-radio" class="custom-control-input radio-success">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">4x4</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" name="stacked-radio" class="custom-control-input radio-success">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">5x5</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" name="stacked-radio" class="custom-control-input radio-success" checked>
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">6x6</span>
+                    </label>
+
+                  </div>
+                </div>
+              </div>
+
+              <h6></h6>
+              <ngb-timepicker [(ngModel)]="timeCustomSteps" [seconds]="false" [hourStep]="hourStep" [minuteStep]="minuteStep" [secondStep]="secondStep"></ngb-timepicker>
+
+              <div class="input-group-sm">
+                <ss-multiselect-dropdown [options]="thirdControlOptions" [texts]="thirdControlTexts" [settings]="thirdControlSettings" [(ngModel)]="thirdControlModel"></ss-multiselect-dropdown>
+              </div>
+
+
+<button class="btn-outline-primary">create games</button>
+
+            </div>
+          </section>
+
+
+        </article>
+
+
+
+
+  </div>
+    <div class="tab-pane" id="command-search"></div>
+
+    <div class="tab-pane" id="user-search">
+      <div class="col-md-8 offset-4 mb-3">
+        <h6></h6>
+        <div class="form-group">
+          <div class="custom-controls-stacked">
+
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input checkbox-primary" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Men</span>
+            </label>
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input checkbox-primary" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Women</span>
+            </label>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="create-games">111111111111111111111111 </div>
+</aside>
+
+
+
+</section>
+
+  </div>
+
+</section>
+
+
+<section widget class="card bg-transparent border-0 box-shadow-none mt-3">
+  <nav class="card-header box-shadow">
+    <span>Карта</span>
+    <div class="widget-controls">
+      <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+      <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+      <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+      <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+
+    </div>
+  </nav>
+
+  <!--<aside class="news-message">-->
+  <!--</aside>-->
+
+  <!--<div class="card-block bg-transparent widget-body p-0 bottom-30">-->
+    <!--<app-leaflet-maps></app-leaflet-maps>-->
+  <!--</div>-->
+
+
+</section>
+
+
+<section widget class="card border-0 box-shadow-none mt-3">
+  <div class="card-block widget-body">
+    <p class="fs-13 text-gray">Modained, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+
+
+  </div>
+</section>
+
+
+

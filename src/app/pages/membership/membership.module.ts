@@ -31,5 +31,6 @@ export const routes = [
   declarations: [
     MembershipComponent
   ]
+
 })
 export class MembershipModule { }
